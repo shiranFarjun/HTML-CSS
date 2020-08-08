@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title> side part disappearance</title>
+    <style> 
+    *{
+        box-sizing: border-box;
+        font-family:Ariel;
+        line-height:1.3em;
+    }
+    .continer{
+        max-width: 960px;
+        margin:auto;
+    }
+    .header{
+        height:50px ;
+        text-align:center;
+        margin:10px;
+        background:rgba(255, 1, 213, 0.842);
+    }
+    .margin .side {
+        margin:10px;
+        width:30%;
+        height:250px;
+        float: left;
+        text-align:left;
+        background:rgb(8, 175, 241);
+    
+    }
+    .margin .main{
+        height:250px;
+        width:65%;
+        float:right;
+        text-align:right;
+        background:rgb(83, 3, 99);
+    }
+    .footer{
+        clear:both;
+        height:50px;
+        text-align:center;
+        background:rgb(255, 240, 37);
+    }
+    @media (max-width:435px) {
+        .margin .side{
+            display: none;
+            width:0%;
+            height: 0%;
+        }.margin .main{
+            height:250px;
+            width:100%;
+        }
+
+    }
+    </style>
+</head>
+<body>
+    <div class="continer">
+        <div class="header">
+            Header
+        </div>
+        <div class="margin">
+            <div class="side">
+                Side
+            </div>
+            <div class="main">
+                Main
+            </div>   
+        </div>
+        <div class="footer">
+            Footer
+        </div>
+    </div>
+</body>
+</html>
+    

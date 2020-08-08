@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>21.1 Animations</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container a {
+            border: 1px solid black;
+            padding: 6px;
+            text-decoration: none;
+        }
+
+        /* btn 3 */
+        .btn3 {
+            background: white;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .btn3::before {
+            position: absolute;
+            content: "YEAH";
+            height: 100%;
+            width: 100%;
+            top: 0;
+            left: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: teal;
+            transform: translateY(-100%);
+            transition: all 1.5s ease;
+        }
+
+        .btn3:hover::before {
+            transform: translateY(0);
+        }
+
+        /*  btn 2 */
+        .btn2 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+
+        }
+
+        .btn2::before {
+            content: "";
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            top: 0;
+            left: 0;
+            transform: translateX(-100%);
+            transition: all 1s;
+            background: teal;
+            z-index: -1;
+        }
+
+        .btn2:hover::before {
+            transition: all 1s;
+            transform: translateX(0);
+        }
+
+        .btn2:hover {
+            color: white;
+        }
+
+        /*  btn 1 */
+        .btn1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+
+        }
+
+        .btn1::before {
+            content: "";
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            transform-origin: top left;
+            background-color: teal;
+            transform: rotate(-90deg);
+            transition: all 1s;
+            z-index: -1;
+        }
+
+        .btn1:hover::before {
+            transform: rotate(0);
+        }
+
+
+        /*  btn 4 */
+        .btn4 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+
+        }
+
+        .btn4::before {
+            content: "scale & opacity";
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transform: scale(5);
+            transition: all 3s;
+            opacity:0;
+            color:white;
+
+        }
+
+        .btn4:hover::before {
+            transform: scale(1);
+            background-color: black;
+            opacity:1;
+        }
+        
+
+      
+
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <a class="btn1">Rotate</a>
+        <a class="btn2">Translate</a>
+        <a class="btn3">Translate Y</a>
+        <a class="btn4">Scale & Opacity</a>
+    </div>
+</body>
+
+</html>

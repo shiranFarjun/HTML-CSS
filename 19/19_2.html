@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>19_2 Cool Border</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      padding: 0;
+      margin: 0;
+    }
+    body{
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .box1{
+      font-size: 3vw;
+      padding:75px;
+      color: white;
+      background:black;
+      position: relative;
+    }
+    .box1::before{
+      content:" ";
+      position: absolute;
+      height:8px;
+      width: 8px;
+      top: 6vh;
+      right: 6vh;
+      border-top: 4px solid red;
+      border-right: 4px solid red;
+    }
+
+    .box1::after{
+      content:" ";
+      position: absolute;
+      height:8px;
+      width: 8px;
+      bottom: 6vh;
+      right: 6vh;
+      border-bottom: 4px solid red;
+      border-right: 4px solid red;
+    }
+
+    .box2{
+      
+      position: relative;
+    }
+    .box2::before{
+      content:" ";
+      position: absolute;
+      height:8px;
+      width: 8px;
+      bottom: 6vh;
+      right:28vh;
+      border-top: 4px solid red;
+      border-left: 4px solid red;
+    }
+
+    .box2::after{
+      content:" ";
+      position: absolute;
+      height:8px;
+      width: 8px;
+      top: 6vh;
+      right: 28vh;
+      border-bottom: 4px solid red;
+      border-left: 4px solid red;
+    }
+
+
+    
+  </style>
+</head>
+<body>
+  <div class="box1"> Cool Border</div>
+  <div class="box2"> </div>
+  
+</body>
+</html>

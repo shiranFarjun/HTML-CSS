@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>19_3 Pseudo selectors</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            background: rgb(91, 211, 241);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .tolip {
+            font-size: 15px;
+            padding: 75px;
+        }
+
+        a {
+            text-decoration: none;
+            position: relative;
+        }
+
+        a:hover::before {
+            content: "this is badass tooltip";
+            background: rgb(247, 247, 8);
+            border-radius: 10px;
+            position: absolute;
+            padding: 4px;
+            bottom: 20px;
+            left: 9px;
+
+        }
+        a:hover::after{
+            content:" ";
+            position:absolute;
+            border-left: 9px solid transparent;
+            border-right: 9px solid transparent;
+            border-top: 9px solid rgb(247, 247, 8);
+            bottom: 10px;
+            left: 9px;
+            padding: 2px;
+
+        }
+
+      
+    </style>
+</head>
+
+<body>
+    <h1>CSS – Tooltip</h1>
+    <div class="tolip"> Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        Rerum non quisquam recusandae nobis vero, eius officiis aliquam cupiditate amet in!
+        Officiis magnam qui labore quae alias eveniet. Vel adipisci placeat animi optio accusantium odio.
+        Deleniti quibusdam ad vitae repudiandae eveniet odit dolore eos delectus dicta dolores quasi exercitationem
+        cupiditate sint,
+        suscipit quo necessitatibus soluta, debitis itaque <a href=" #"> corrupti </a> minima quaerat officiis. Voluptas
+        quibusdam iste et
+        rem aspernatur at nostrum, assumenda delectus ad eius debitis sit suscipit voluptate quam.
+        Temporibus inventore, repellat nihil consequatur consequuntur illo quis qui magni est iure nam at magnam fuga
+        fugit necessitatibus! Praesentium corrupti numquam iure,
+        recusandae sequi, pariatur tempora facere velit ducimus error cupiditate, in obcaecati similique! Fugit dolorum,
+        odio voluptate, quasi officiis officia voluptates incidunt amet quis omnis explicabo? Neque laborum iusto
+        molestiae aspernatur animi,
+        excepturi sapiente ullam, odio magni libero natus obcaecati earum praesentium?
+        Sequi<a href=" #"> reprehenderit</a> at quaerat recusandae nemo nam ut voluptas itaque beatae expedita laborum
+        voluptatem facere
+        velit, veniam voluptatum.
+        Ut earum sit iure, quidem laudantium repellendus, adipisci maiores fugit, aspernatur odio modi. Ipsam, excepturi
+        voluptate? Cum et aperiam corrupti molestias temporibus neque sed fugit sapiente recusandae.
+        Voluptatem a soluta, laborum quo animi dolorem tempora modi dolore sint illo quisquam atque vero.</div>
+    <div id="triangle-down"></div>
+</body>
+
+</html>

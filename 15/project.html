@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Model 3 |Tesla</title>
+  <style>
+  *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family:Arial, Helvetica, sans-serif;
+    }
+    #first{
+        background:url('./model-3-hero.jpg');
+        background-size:100%;
+        height: 100vh;
+        position: relative;
+    }
+    #second{
+        background:url('./2.jpg');
+        height: 100vh;
+        background-size:100%;
+        
+    }
+     /* Model 3 */
+    #first .header p {
+        color:white;
+        font-size:45px;
+        font-family: Arial ;
+        margin-top: 1%;
+        margin-left:43%;
+    }
+   
+    
+    .logo img{
+        float: left;
+        margin-bottom:5%;
+        margin-left:5%;
+        width: 100px;
+        height: 100px; 
+        filter:invert(100%);
+
+    }
+    #navbar{
+        overflow:auto;
+    }
+
+
+    .info {
+        overflow:auto;
+        position:absolute;
+        bottom:0%;
+        left:0%;
+        right:20%;
+        top:80%;
+        
+    }
+    .info .speed img{
+        width:8%;
+        height: 40%;
+        filter:invert(100%);
+        font-size:15px;
+        position:absolute;
+        bottom:0%;
+        left:34%;
+        right:0%;
+        top:0%;
+    }
+    .info .speed b,.info .speed p{ 
+        position:absolute;
+        bottom:0%;
+        left:0%;
+        right:0%;
+        top:0%;
+    }
+    .info .line-o{
+        font-size:30px;
+        position:absolute;
+        bottom:0%;
+        left:20%;
+        right:12%;
+        top:2%;
+    }
+    .info .line-t {
+        font-size:30px;
+        position:absolute;
+        bottom:0%;
+        left:32%;
+        right:0%;
+        top:0%;
+
+    }
+    
+    .info a{
+        text-decoration:none;
+         
+    }
+    .info ul{
+        list-style:none;
+        float:right;
+    }
+    .info ul li{
+        text-align: center;
+        font-size:20px;
+        color:white;
+        float: left;  
+    }
+    .info ul li {
+        display:inline;
+    }
+    .info .range{
+        position:absolute;
+        bottom:0%;
+        left:20%;
+        right:0%;
+        top:0%;
+    }
+    .info .dual{
+        position:absolute;
+        bottom:0%;
+        left:44%;
+        right:0%;
+        top:0%;
+    }
+    .info .bottom{
+        position:absolute;
+        bottom:0%;
+        left:0%;
+        right:0%;
+        top:0%;
+    }
+    .info  li >p{
+        font-size:10px;
+    }
+   
+    /* .info .range{
+        padding-left:0%;
+        padding-right:0%; 
+    } */
+    .info button{
+        border-radius:5px;
+        border: 1px solid  white;
+        background:none;
+        color: white;
+        margin-left:0%;
+        margin-right:0%;
+
+    }
+    .info button:hover{
+        background: rgba(247, 243, 243,0.8);
+    } 
+    /* .info li .speed{
+        margin-left: 0%;
+        margin-right:0%;
+    } */
+
+
+
+    #navbar a{
+        color:white;
+        text-decoration:none;
+    }
+    #navbar  .menu a{
+        display:block;
+        padding:10px;
+
+    }
+    .right ul{
+        list-style:none;
+    }
+
+    .right .baroption ,.right .link ul{
+        float:right;
+    }
+
+    .right .baroption  li,.right .link li{
+        float:left;
+    }
+
+    #navbar .right a{
+        display:inline;
+        padding:0 px;
+        margin:10px;
+        text-align: center;
+    }
+    .right .baroption{
+        margin-top:2.7%;
+        margin-right:20%;
+    }
+
+    .right .link ul{
+        margin-left:30%;
+    }
+
+    #side{
+        position:absolute;
+        top:10%;
+        left:2%;
+    }
+    #side ul{
+        list-style:none;
+        list-style:none;
+    }
+    #side a{
+        color:gray;
+    }
+    #side a:hover{
+        color:white
+    }
+
+   
+
+    /*  //////// */
+    /* #first .menu{
+            clear: both;
+            max-height: 0;
+            transition:max-height .2s ease-out;
+        }
+        #first .menu_icon{
+            padding:28px 20px;
+            position: relative;
+            float:right;
+            cursor: pointer;
+            
+        }
+        #first .menu_icon .nev_icon{
+            background:#333;
+            display:block;
+            height: 2px;
+            width: 18px;
+            position: relative;
+            transition:background .2s ease-out;
+        }
+        #first .menu_icon .nev_icon:before{
+            background:#333;
+            content:"";
+            display:block;
+            height: 100%;
+            width:100%;
+            position:absolute;
+            top:5px;
+            transition: all .2s ease-out;
+        }
+        #first .menu_icon .nev_icon:after{
+            background:#333;
+            content:"";
+            display:block;
+            height:100%;
+            width:100%;
+            position:absolute;
+            top:-5px;
+            transition: all .2s ease-out;
+        }
+        #first .menu_btn {
+            display: none;
+        }
+        #first .menu_btn:checked~.menu{
+            max-height: 250px;
+        }
+        #first .menu_btn:checked~.menu_icon .nev_icon{
+            background:transparent;
+        }
+        #first .menu_btn:checked~.menu_icon .nev_icon:before{
+            transform:rotate(-45deg);
+            top:0;
+        }
+        #first .menu_btn:checked~.menu_icon .nev_icon:after{
+            transform:rotate(45deg);
+            top:0;
+        }
+    
+     */
+   
+  </style>
+</head>
+<body>
+    <div id="first">
+        <header class="header">
+            <nav id="navbar">
+                <div class="logo"> <img src="./Tesla.png"></div>
+                <div class="right">
+                    <ul class="baroption">
+                        <li><a href="https://www.tesla.com/models"> MODEL S</a></li>
+                        <li><a href="https://www.tesla.com/model3"> MODEL 3</a></li>
+                        <li><a href="https://www.tesla.com/modelx"> MODEL X</a></li>
+                        <li><a href="https://www.tesla.com/modely"> MODEL Y</a></li>
+                        <li><a href="https://www.tesla.com/solarroof"> SOLAR ROOF</a></li>
+                        <li><a href="https://www.tesla.com/solarpanels"> SOLAR PANELS</a></li>
+                    </ul>
+                    <div class="link">
+                        <ul>
+                            <li><a href="https://shop.tesla.com/?tesref=true">SHOP</a></li>
+                            <li><a href="https://auth.tesla.com/oauth2/v1/authorize?client_id=teslaweb&response_type=code&scope=openid%20email%20profile&redirect_uri=https%3A//www.tesla.com/openid-connect/generic&state=bsa1rkRfryOJfPdTROmyEz37uzOxjmz90qcuER-3v4Y">SIGN IN</a></li>
+                            <li><div class="humborger">
+                                <input class="menu_btn" type="checkbox" id="menu_btn"/>
+                                <label class='menu_icon' for='menu_btn'><span class="nev_icon"></span></label>
+                                <ul class="menu">
+                                    <li><a href="https://www.tesla.com/inventory/used/ms">USED INVENTORY</a></li>                
+                                    <li><a href="https://www.tesla.com/cybertruck">TRADE-IN</a></li>
+                                    <li><a href="https://www.tesla.com/cybertruck">CYBERTRUCK</a></li>
+                                    <li><a href="https://www.tesla.com/roadster">ROADSTER</a></li>
+                                    <li><a href="https://www.tesla.com/semi">SEMI</a></li>
+                                    <li><a href="https://www.tesla.com/powerwall">POWERWALL</a></li>
+                                </ul>
+                            </div></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div id="side">
+                <ul>
+                    <li><a href="https://www.tesla.com/model3">|</a></li>
+                    <li><a href="https://www.tesla.com/model3">|</a></li>
+                    <li><a href="https://www.tesla.com/model3">|</a></li>
+                    <li><a href="https://www.tesla.com/model3">|</a></li>
+                    <li><a href="https://www.tesla.com/model3">|</a></li>
+                    <li><a href="https://www.tesla.com/model3">|</a></li>
+                    <li><a href="https://www.tesla.com/model3">|</a></li>
+                    <li><a href="https://www.tesla.com/model3">|</a></li>
+                    <li><a href="https://www.tesla.com/model3">|</a></li>
+                </ul>
+            </div>
+            <div class="title">Model 3</div>
+            <div class=" info">
+                <ul>
+                    <li class="speed"><img  src="https://img.icons8.com/carbon-copy/100/000000/speed.png"><b> 3.2</b>
+                        <br><p>Form 0.6 mph  </p></li>
+                    <li class="line-o">|</li>
+                    <li class="range"><b>322 mi</b><p>Range </p></li>
+                    <li class="line-t">|</li>
+                    <li class="dual"><b>AWD</b><p> Dual M </p></li>
+                    <li><button type="button">ORDER NOW</button> </li>
+                </ul>
+            </div>
+        </header>
+    </div>
+    <div id="second">
+
+    </div>
+</body>
+</html>
+
+                

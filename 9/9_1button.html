@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flot exmple</title>
+    <style>
+        .btn{
+            
+           background:rgb(153, 223, 255);
+            text-align: center;
+            font-family:'Segoe UI',Ariel;
+        }
+        .flat>button ,.round >button{
+            border:none;
+        }
+       
+                           /*radius*/
+        .btn .round-ghost > button , .btn .round > button{
+            border-radius:5px;
+        }
+                           /*Flat*/
+        .flat .btn-r{
+            background-color: #4CAF50;
+        } 
+        .flat .btn-r:hover{
+            box-shadow: 2px 2px 2px  #4CAF50;
+        }
+
+        .flat .btn-c{
+            background-color: #f44336;
+        }
+        .flat .btn-c:hover{
+            box-shadow:3px 3px 3px #f44336;
+           
+        }
+        .flat .btn-s{
+            background-color:  #008CBA;
+        }
+        .flat .btn-s:hover{
+            box-shadow:3px 3px 3px #008CBA;
+        }
+                            /*Round*/
+        .round .btn-r{
+            background: rgb(252, 149, 15);
+        }  
+        .round .btn-r:hover{
+            box-shadow: 2px 2px 2px rgb(252, 149, 15);
+        }
+        
+        .round .btn-c{
+            background: rgb(255, 251, 26);
+            
+        }
+        .round .btn-c:hover{
+            box-shadow: 2px 2px 2px rgb(255, 251, 26);
+        }
+        
+        .round .btn-s{
+            background: rgb(104, 104, 105);
+        }
+        .round .btn-s:hover{
+            box-shadow:2px 2px 2px rgb(104, 104, 105);
+        }
+                               /*flat-ghost*/
+        .flat-ghost .btn-r{
+           border:1px solid #4CAF50;
+        }  
+        .flat-ghost .btn-r:hover{
+            background:  #4CAF50;
+        }
+        .flat-ghost .btn-c{
+          border:1px solid #f44336;
+        }
+        .flat-ghost .btn-c:hover{
+            background: #f44336;
+        }
+        .flat-ghost .btn-s{
+            border:1px solid #008CBA;
+            
+        }
+        .flat-ghost .btn-s:hover{
+            background: #008CBA;
+        }
+                             /*round-ghost*/
+        .round-ghost .btn-r{
+            border: 1px solid  rgb(252, 149, 15);
+        }  
+        .round-ghost .btn-r:hover{
+            background: rgb(252, 149, 15);
+        }
+        
+        .round-ghost .btn-c{
+            border:1px solid rgb(255, 251, 26);
+        }
+        .round-ghost .btn-c:hover{
+           background: rgb(255, 251, 26);
+        }
+        .round-ghost .btn-s{
+            border:1px solid rgb(104, 104, 105);
+        }
+        .round-ghost .btn-s:hover{
+            background:rgb(104, 104, 105);
+        }   
+        .btn-r{
+            font-size:22px
+        }
+        .btn-c{
+            font-size: 20px;
+        }
+        .btn-s{
+            font-size: 18px;
+        } 
+    </style>
+</head>
+<body>
+    <div class="btn">
+        <div class="flat">
+            <h4>Flat</h4>
+            <button class="btn-r">Register</button>
+            <button class="btn-c">Clear</button>
+            <button class="btn-s">Submit</button>
+        </div>
+        <div class="round">
+            <h4>Round</h4>
+            <button class="btn-r">Register</button>
+            <button class="btn-c">Clear</button>
+            <button class="btn-s">Submit</button>
+        </div>
+        <div class="flat-ghost">
+            <h4>Flat Ghost</h4>
+            <button class="btn-r">Register</button>
+            <button class="btn-c">Clear</button>
+            <button class="btn-s">Submit</button>
+        </div>
+        <div class="round-ghost">
+            <h4>Round ghost</h4>
+            <button class="btn-r">Register</button>
+            <button class="btn-c">Clear</button>
+            <button class="btn-s">Submit</button>
+        </div>
+    </div>  
+</div>
+</body>
+</html>

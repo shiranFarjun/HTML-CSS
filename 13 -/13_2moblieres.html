@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title> Mobile responsive</title>
+  <style>
+        .container {
+          text-align: center;
+          font-size: 15px;
+        }
+       
+        .container div{
+            width:200px;
+            height: 200px;
+            border:1px solid palevioletred;
+            display: inline-block;
+        }
+
+        @media (max-width:850px) {
+            .container div{
+                display:block;
+                margin:0 auto;
+            }
+        }
+    
+
+       
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div>
+            BOX1 <br>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Cum, optio quo.
+            Dignissimos vitae natus velit saepe quaerat fugit accusantium, illo vel exercitationem nihil esse maxime cum facere. 
+            Ipsum, porro nam.</div>
+        <div id="box2">BOX2<br> Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Cum, optio quo.
+            Dignissimos vitae natus velit saepe quaerat fugit accusantium, illo vel exercitationem nihil esse maxime cum facere. 
+            Ipsum, porro nam.</div>
+        <div id="box3"> BOX3<br>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Cum, optio quo.
+            Dignissimos vitae natus velit saepe quaerat fugit accusantium, illo vel exercitationem nihil esse maxime cum facere. 
+            Ipsum, porro nam.</div>
+        <div id="box4">BOX4<br> Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Cum, optio quo.
+            Dignissimos vitae natus velit saepe quaerat fugit accusantium, illo vel exercitationem nihil esse maxime cum facere. 
+            Ipsum, porro nam.
+        </div>
+    </div>
+</body>
+</html>
